@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Péczeli Dalma">
+    <title>Rendezvénytechnika</title>
+    <link rel="stylesheet" href="Ajanlatkeres.css">
+    <link rel="stylesheet" href="Hemi.css">
+    <script src="WebApplication1\Ajanlatkeres.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--a Fontawesome oldalon levo ikon hasznalata miatt-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    
+</head>
+<script>
+    function Hamburgermenu() {
+        var x = document.getElementById("hambielemek");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+ 
+
+<body>
+ 
+    <div class="menu">
+        <div class="cimkek cursor" onclick="window.location.href='Hemi.html'">Kezdőlap</div>
+        <div class="cimkek cursor" onclick="window.location.href='Szolgaltatasok.html'">Szolgáltatások</div>
+        <div class="cimkek cursor active" onclick="window.location.href='Ajanlatkeres.html'">Ajánlatkérés</div>
+        <div class="cimkek cursor" onclick="window.location.href='Referencia.html'">Referencia</div>
+        <div class="cimkek cursor" onclick="window.location.href='Informaciok.html'">Informaciók</div>
+        <div class="cimkek cursor" onclick="window.location.href='Kapcsolat.html'">Kapcsolat</div>
+    </div>
+    <!--HAMBIMENU-->
+    <div class="hamburgermenu">
+        <div class="hambicimke cursor active" onclick="window.location.href='Ajanlatkeres.html'">Ajánlatkérés</div>
+        <div id="hambielemek">
+            <div class="hambicimke cursor" onclick="window.location.href='Hemi.html'">Kezdőlap</spam>
+            </div>
+            <div class="hambicimke cursor" onclick="window.location.href='Szolgaltatasok.html'">Szolgáltatások</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Referencia.html'">Referencia</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Informaciok.html'">Informaciók</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Kapcsolat.html'">Kapcsolat</div>
+        </div>
+        <a href="javascript:void(0);" class="ikon" onclick=" Hamburgermenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!--ELERHETOSEG-->
+    <div class="divekhattere">
+        <div id="figyelmeztetes">Ajánlatkérését sziveskedjék legalább kettő héttel előre jelezni!</div>
+
+        <div class="elerhetoseg">
+            <div id="Elerhetosegcim">Elérhetőségek</div><br>
+            <!--ikon-->
+            <i class="fas fa-phone-alt"></i> <a class="sorkoz" href="tel:06308287220"> 06308287220</a><br>
+            <i class="far fa-envelope"></i> <a class="sorkoz" href="mailto:hemistage@gmail.com" target="_blank">
+                hemistage@gmail.com</a><br>
+            <i class="fab fa-facebook-square"></i> <a class="sorkoz" href="https://www.facebook.com/helmeczi.mihaly"
+                target="_blank">Helmeczi Mihály</a>
+        </div>
+
+        <!--URLAP-->
+        <div class="urlapelemek visszajelzes" id="urlapElkuldve" style="display: none;">
+            Az ajánlatot sikeresen elküldte! <br>
+            Technikusunk hamarosan felveszi Önnel a kapcsolatot.
+        </div>
+        <div class="urlapelemek visszajelzes" id="urlapKuldesSikertelen" style="display: none;">
+            Az ajánlatkérés elküldése sikertelen!<br>
+            Kérjük próbálja meg újra kitölteni az ajánlatkérést,<br> vagy keressen fel bármely elérhetőségeim egyikén!”
+            
+        </div>
+        <div class="urlapelemek" id="urlapForm">
+            <span id="Ajanlatcim">Kérjen ajánlatot!</span>
+            <input type="text" id="nev" class="sorkoz ajanlatkeres-input" placeholder="Név" required
+                onkeyup="nevValidacio()">
+            <input type="tel" id="telefonszam" class="sorkoz ajanlatkeres-input" placeholder="Telefonszám" required
+                onkeyup="telefonszamValidacio()">
+            <input type="email" id="e-mail" class="sorkoz ajanlatkeres-input" placeholder="E-mail cím" required
+                onkeyup="emailValidacio()"><br>
+            <hr class="sorkoz">
+            <input type="text" id="helyszin" class="sorkoz ajanlatkeres-input" placeholder="Helyszín,cím"><br>
+            <label for="EseményJelleg" class="sorkozlabel">Esemény jellege (Kérem válasszon!)</label><br>
+            <select id="esemenyjelleg" class="ajanlatkeres-select" name="esemenyek" required>
+                <option value="egyeb">Egyéb</option>
+                <option value="konferencia">Konferencia</option>
+                <option value="koncert">Koncert</option>
+                <option value="eskuvo">Esküvő</option>
+                <option value="csalasinap">Családi nap</option>
+                <option value="sportesemeny">Sportesemény</option>
+                <option value="cegesrendezveny">Céges rendezvény</option>
+                <option value="onlinestream">Online stream</option>
+            </select><br>
+            <input type="text" id="resztvevoszam" class="sorkoz ajanlatkeres-input"
+                placeholder="Tervezett résztvevők száma"><br>
+
+            <label for="EseményKezdete" class="sorkozlabel">Esemény kezdete:</label><br>
+            <input type="date" id="kezdet" class=" ajanlatkeres-input-date" placeholder="Rendezvény kezdete"
+                onchange="esemenykezdetValidacio()"><br>
+
+            <label for="EseményVege" class="sorkozlabel">Esemény vége:</label><br>
+            <input type="date" id="veg" class="ajanlatkeres-input-date" placeholder="Rendezvény vége" 
+                onchange="esemenyvegeValidacio()"><br>
+
+            <textarea name="Üzenet" id="uzenet" class="sorkoz" placeholder="Üzenet...."></textarea>
+            <!--<input type="button" class="formszoveg sorkoz gombformazas" id="kuldes" value="Ajánlatkérés"
+                    style="width:40.4vw;" onclick="ajanlatkeres()">
+                    <input type="submit" class="formszoveg sorkoz gombformazas"  style="width:40.4vw;" value="Ajánlatkérés">-->
+            <div id="gomb" class="sorkoz" onclick="ajanlatkeres()">Ajánlatkérés</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footerelerhetoseg">
+            <span class="footerelerhetosegcim">Elérhetőségek</span>
+            <br>
+            <!--ikon-->
+            <i class="fas fa-phone-alt"></i> <a  href="tel:06308287220"> 06308287220</a> <br>
+            <i class="far fa-envelope"></i> <a  href="mailto:hemistage@gmail.com" target="_blank">
+                hemistage@gmail.com</a> <br>
+            <i class="fab fa-facebook-square"></i> <a
+                href="https://www.facebook.com/helmeczi.mihaly" target="_blank">Helmeczi Mihály</a><br>
+            <i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/ce57ydFAeevPb2Gr5" target="blank">
+                Budapest, Zsókavár u.57,1157</a> 
+        </div>
+
+        <div class="impresszum">
+            <span class="impresszumcim">Impresszum</span> <br>
+            Szolgátató neve: Helmeczi Mihály<br>
+            Székhelye: Magyarország, 1157 Budapest, Zsókavár utca 57<br>
+            Nyilvántartási szám: 55266767<br>
+            Adószám: 56602595-9002-231-01
+        </div>
+        
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+/*A BERLESI FELTETELEK SZOVEG */
+#berlesifeltelek {
+    background-color: rgba(255, 255, 255, 0.030);
+    line-height: 2em;
+    text-align: justify;
+}
+
+/*A BERLESI FELTETELEK SZOVEG HOVER */
+#berlesifeltelek:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A TECHNIKUS BERLES KARTYANAK A CIME*/
+#technikuscim {
+    color: #879586;
+    background-color: rgba(255, 255, 255, 0.030);
+    cursor: default;
+    padding: 1vw;
+    text-align: center;
+}
+
+/*A TECHNIKUS BERLES KARTYA CIME HOVERREL*/
+#technikuscim:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A TECHNIKUS BERLES KARTYANAK AZ ALSORESZE*/
+.elerhetosegektartalom {
+    background-color: rgba(255, 255, 255, 0.030);
+    font-size: 1em;
+    padding: 1vw;
+    margin-top: -1vh;
+}
+
+/*ATECHNIKUS BERLES KARTYA ALSORESZ HOVERREL*/
+.elerhetosegektartalom:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*LINK FORMAZAS*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*LINK HOVER FORMAZAS*/
+a:hover {
+    color: #64dd17;
+    text-shadow: 0.5vw 0.5vw 0.5vw black;
+    transition: .2s ease;
+}
+
+/*KURZOR FORMAZASA*/
+.cursor {
+    cursor: pointer;
+}
+
+/*AZ ESZKOZEINK SZOVEG*/
+#eszkozszoveg {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 5vh;
+    color:#879586;
+}
+
+/*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+.eszkozok-hattere {
+    margin-left: 2vw;
+}
+
+/*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+.termek-nev {
+    color: #879586;
+    margin-top: 2vh;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.030);
+    height: 6vh;
+    padding-top: 3vh;
+}
+
+.termek-nev:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A KARTYANAK AZ ALSO RESZE AHOL AZ AR VAN*/
+.termek-ar {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.030);
+    padding-top: 2vh;
+    height: 4vh;
+    margin-top: -1%;
+    color: rgb(167, 167, 167);
+}
+
+.termek-ar:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*1400PX FOLOTT*/
+@media(min-width: 1400px) {
+
+    /*A RENDEZVENY TECHNIKUS DIV ELEM FORMAZASA*/
+    #rendezvenytechnikus {
+        margin-left: 2vw;
+        margin-top: 6vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A CIME*/
+    #technikuscim {
+        font-size: 1em;
+        padding-top: 2vh;
+        width: 10vw;
+    }
+
+    /*A TECHNIKUS KEP*/
+    .avatarkep {
+        width: 12vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A TARTALMA*/
+    .elerhetosegektartalom {
+        width: 10vw;
+        padding-bottom: 5vh;
+    }
+
+    /*A BERLESI FELTETELEK SZOVEG */
+    #berlesifeltelek {
+        width: 20vw;
+        margin-right: 55vw;
+        padding-left: 1vw;
+        padding-right: 2vw;
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+        font-size: 1em;
+        float: right;
+        line-height: 1.5em;
+    }
+
+    /*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+    .eszkozok-hattere {
+        float: left;
+        margin-top: 10vh;
+    }
+
+    /*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+    .termek-nev {
+        width: 10vw;
+        font-size: 1em;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep {
+        width: 10vw;
+        height: 30vh;
+    }
+
+    /*A KARTYANAK AZ ALSO RESZE AZ AR*/
+    .termek-ar {
+        width: 10vw;
+        font-size: 1em;
+    }
+}
+
+/*1400 ES 992 KOZOTT*/
+@media(max-width: 1400px) and (min-width: 992px) {
+
+    /*A BERLESI FELTETELEK SZOVEG */
+    #berlesifeltelek {
+        width: 30vw;
+        margin-right: 35vw;
+        padding-top: 2vh;
+        padding-right: 3vw;
+        font-size: 1em;
+        float: right;
+        line-height: 2em;
+    }
+
+    /*A RENDEZVENY TECHNIKUS DIVE ELEM FORMAZASA*/
+    #rendezvenytechnikus {
+        margin-top: 10vh;
+        margin-left: 2vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A CIME*/
+    #technikuscim {
+        font-size: 1em;
+        padding-top: 3vh;
+        width: 20vw;
+    }
+
+    /*A TECHNIKUS KEP*/
+    .avatarkep {
+        width: 22vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A TARTALMA*/
+    .elerhetosegektartalom {
+        width: 20vw;
+        padding-bottom: 3vh;
+    }
+
+    /*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+    .eszkozok-hattere {
+        float: left;
+        margin-top: 6vh;
+    }
+
+    /*AZ ESZKOZOK ES A WEBOLDAL KOZTI TAVOLSAG*/
+    #termek-container {
+        margin-left: 4vw;
+    }
+
+    /*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+    .termek-nev {
+        width: 10vw;
+        font-size: 1em;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep {
+        width: 10vw;
+        height: 30vh;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*A KARTYANAK AZ ALSO RESZE AZ AR*/
+    .termek-ar {
+        width: 10vw;
+        font-size: 1em;
+    }
+
+
+}
+
+/*768 ES 992 KOZOTT*/
+@media(max-width: 992px) and (min-width: 768px) {
+
+    /*A BERLESI FELTETELEK SZOVEG */
+    #berlesifeltelek {
+        width: 40vw;
+        margin-right: 20vw;
+        padding-top: 2vh;
+        padding-right: 3vw;
+        font-size: 1em;
+        float: right;
+        line-height: 2em;
+    }
+
+    /*A RENDEZVENY TECHNIKUS DIVE ELEM FORMAZASA*/
+    #rendezvenytechnikus {
+        margin-top: 10vh;
+        margin-left: 2vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A CIME*/
+    #technikuscim {
+        font-size: 1em;
+        padding-top: 3vh;
+        width: 20vw;
+    }
+
+    /*A TECHNIKUS KEP*/
+    .avatarkep {
+        width: 22vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A TARTALMA*/
+    .elerhetosegektartalom {
+        width: 20vw;
+        padding-bottom: 3vh;
+    }
+
+    /*AZ ESZKOZOK ES A WEBOLDAL KOZTI TAVOLSAG*/
+    #termek-container {
+        margin-left: 4vw;
+    }
+
+    /*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+    .eszkozok-hattere {
+        float: left;
+        margin-top: 6vh;
+    }
+
+    /*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+    .termek-nev {
+        width: 20vw;
+        font-size: 1em;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep {
+        width: 20vw;
+        height: 30vh;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*A KARTYANAK AZ ALSO RESZE AZ AR*/
+    .termek-ar {
+        width: 20vw;
+        font-size: 1em;
+    }
+}
+
+/*768 ALATT ES 576 FOLOTT*/
+@media(max-width: 768px) and (min-width: 576px) {
+
+    /*A BERLESI FELTETELEK SZOVEG */
+    #berlesifeltelek {
+        margin-top: 5vh;
+        width: 60vw;
+        margin-right: 2vw;
+        padding-top: 2vh;
+        padding-right: 3vw;
+        font-size: 1em;
+        float: right;
+        line-height: 2em;
+    }
+
+    /*A RENDEZVENY TECHNIKUS DIVE ELEM FORMAZASA*/
+    #rendezvenytechnikus {
+        margin-top: 5vh;
+        margin-left: 2vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A CIME*/
+    #technikuscim {
+        font-size: 1em;
+        padding-top: 3vh;
+        width: 25vw;
+    }
+
+    /*A TECHNIKUS KEP*/
+    .avatarkep {
+        width: 27vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A TARTALMA*/
+    .elerhetosegektartalom {
+        width: 25vw;
+        padding-bottom: 3vh;
+    }
+
+    /*AZ ESZKOZOK ES A WEBOLDAL KOZTI TAVOLSA*/
+    #termek-container {
+        margin-left: 4vw;
+    }
+
+    /*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+    .eszkozok-hattere {
+        float: left;
+        margin-top: 6vh;
+    }
+
+    /*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+    .termek-nev {
+        width: 20vw;
+        font-size: 1em;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep {
+        width: 20vw;
+        height: 30vh;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep img {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*A KARTYANAK AZ ALSO RESZE AZ AR*/
+    .termek-ar {
+        width: 20vw;
+        font-size: 1em;
+    }
+}
+
+/*576px ALATT*/
+@media(max-width: 576px) {
+
+    /*A RENDEZVENY TECHNIKUS DIV ELEM FORMAZASA*/
+    #rendezvenytechnikus {
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+
+    /*A TECHNIKUS KEP*/
+    .avatarkep {
+        width: 90vw;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK AZ ALSORESZE*/
+    .elerhetosegektartalom {
+        width: 88vw;
+    }
+
+    /*A BERLESI FELTETELEK SZOVEG */
+    #berlesifeltelek {
+        margin-top: 5vw;
+        width: 90vw;
+        margin-left: 3.5vw;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+        font-size: 1em;
+        padding-right: 3vw;
+    }
+
+    /*AZ ESZKOZOK ES A WEBOLDAL KOZTI TAVOLSAG*/
+    #termek-container {
+        margin-left: 20vw;
+    }
+
+    /*EBBEN A DIVBEN VANNAK ELHELYEZVE A KEPEK*/
+    .eszkozok-hattere {
+        margin-top: 6vh;
+    }
+
+    /*A KARTYANAK A FELSO RESZE AHOL A TERMEK NEV VAN*/
+    .termek-nev {
+        padding-top: 5vh;
+        width: 60vw;
+        font-size: 1em;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep {
+        height: 40vh;
+    }
+
+    /*A KARTYANAK A KOZEPSO RESZE A KEP*/
+    .termek-kep img {
+        width: 60vw;
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /*A KARTYANAK AZ ALSO RESZE AZ ELERHETOSEG*/
+    .termek-ar {
+        width: 60vw;
+        font-size: 1em;
+    }
+
+    /*A TECHNIKUS BERLES KARTYANAK A CIME*/
+    #technikuscim {
+        width: 88vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}

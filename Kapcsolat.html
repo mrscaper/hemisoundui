@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Péczeli Dalma">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="Hemi.css">
+    <link rel="stylesheet" href="Kapcsolat.css">
+    <!--a Fontawesome oldalon levo ikon hasznalata miatt-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+</head>
+<script>
+    function Hamburgermenu() {
+        var x = document.getElementById("hambielemek");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<body>
+    <div class="menu">
+        <div class="cimkek cursor" onclick="window.location.href='Hemi.html'">Kezdőlap</div>
+        <div class="cimkek cursor" onclick="window.location.href='Szolgaltatasok.html'">Szolgáltatások</div>
+        <div class="cimkek cursor" onclick="window.location.href='Ajanlatkeres.html'">Ajánlatkérés</div>
+        <div class="cimkek cursor" onclick="window.location.href='Referencia.html'">Referencia</div>
+        <div class="cimkek cursor" onclick="window.location.href='Informaciok.html'">Informaciók</div>
+        <div class="cimkek cursor active" onclick="window.location.href='Kapcsolat.html'">Kapcsolat</div>
+        <!--HAMBIMENU-->
+    </div>
+    <div class="hamburgermenu">
+        <div class="hambicimke cursor active" onclick="window.location.href='Kapcsolat.html'">Kapcsolat</div>
+        <div id="hambielemek">
+            <div class="hambicimke cursor" onclick="window.location.href='Hemi.html'">Kezdőlap</spam>
+            </div>
+            <div class="hambicimke cursor" onclick="window.location.href='Szolgaltatasok.html'">Szolgáltatások</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Ajanlatkeres.html'">Ajánlatkérés</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Referencia.html'">Referencia</div>
+            <div class="hambicimke cursor" onclick="window.location.href='Informaciok.html'">Informaciók</div>
+
+        </div>
+        <a href="javascript:void(0);" class="ikon" onclick=" Hamburgermenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="hatterdiv">
+        <div id="baloldal">
+            <div class="elerhetoseg">
+                <span id="elerhetosegcim">Elérhetőségek</span><br><br>
+                <!--ikon-->
+                <i class="fas fa-phone-alt"></i> <a href="tel:06308287220"> 06308287220</a><br><br>
+                <i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/ce57ydFAeevPb2Gr5" target="blank">
+                    Budapest, Zsókavár u.57,1157</a><br><br>
+                <i class="far fa-envelope"></i> <a href="mailto:hemistage@gmail.com" target="_blank">
+                    hemistage@gmail.com</a><br><br>
+                <i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/helmeczi.mihaly"
+                    target="_blank">Helmeczi Mihály</a>
+            </div>
+        </div>
+        <div id="jobboldal">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.470117920711!2d19.143007015879046!3d47.53917830062585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db21574f03bd%3A0x373245f609139d9f!2zQnVkYXBlc3QsIFpzw7NrYXbDoXIgdS4gNTcsIDExNTc!5e0!3m2!1shu!2shu!4v1643116649919!5m2!1shu!2shu"
+                class="terkep" height="500" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footerelerhetoseg">
+            <span class="footerelerhetosegcim">Elérhetőségek</span>
+            <br>
+            <!--ikon-->
+            <i class="fas fa-phone-alt"></i> <a  href="tel:06308287220"> 06308287220</a> <br>
+            <i class="far fa-envelope"></i> <a  href="mailto:hemistage@gmail.com" target="_blank">
+                hemistage@gmail.com</a> <br>
+            <i class="fab fa-facebook-square"></i> <a
+                href="https://www.facebook.com/helmeczi.mihaly" target="_blank">Helmeczi Mihály</a><br>
+            <i class="fas fa-map-marker-alt"></i> <a href="https://goo.gl/maps/ce57ydFAeevPb2Gr5" target="blank">
+                Budapest, Zsókavár u.57,1157</a> 
+        </div>
+
+        <div class="impresszum">
+            <span class="impresszumcim">Impresszum</span> <br>
+            Szolgátató neve: Helmeczi Mihály<br>
+            Székhelye: Magyarország, 1157 Budapest, Zsókavár utca 57<br>
+            Nyilvántartási szám: 55266767<br>
+            Adószám: 56602595-9002-231-01
+        </div>
+        
+    </footer>
+</body>
+
+</html>

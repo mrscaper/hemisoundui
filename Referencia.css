@@ -1,0 +1,70 @@
+/*REFERENCIA SZOVEG FORMAZASA*/
+.RefSzoveg {
+    background-color: rgba(255, 255, 255, 0.030);
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    line-height: 1.5vw;
+    cursor: default;
+}
+
+/*A LISTA ELEMEK FORMAZASA*/
+li {
+    list-style-type: none;
+}
+
+/*REFERENCIA SZOVEG HOVER*/
+.RefSzoveg:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+#RefCim {
+    font-size: 2em;
+    color: #879586;
+}
+
+/*576px ALATT*/
+@media(max-width: 576px) {
+    #RefCim {
+        font-size: 1.5em;
+    }
+
+    /*REFERENCIA SZOVEG FORMAZASA*/
+    .RefSzoveg {
+        line-height: 4vh;
+        font-size: 1em;
+        margin-top: 7vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        padding: 2vw;
+        padding-right: 10vw;
+    }
+}
+
+/*576px ES 1400 KOZOTT*/
+@media (min-width: 576px) and (max-width:1400px) {
+
+    /*REFERENCIA SZOVEG FORMAZASA*/
+    .RefSzoveg {
+        line-height: 4vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 13vh;
+        padding: 2vw;
+        margin-right: 20vw;
+        margin-left: 20vw;
+    }
+}
+
+/*1400 FOLOTT*/
+@media(min-width: 1400px) {
+
+    /*REFERENCIA SZOVEG FORMAZASA*/
+    .RefSzoveg {
+        margin-top: 15vh;
+        margin-right: 20vw;
+        margin-left: 20vw;
+        padding: 3vw;
+    }
+}

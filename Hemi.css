@@ -1,0 +1,382 @@
+body {
+    color: white;
+    /*A menu es a weboldal teteje kozti hely*/
+    margin: 0% auto;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BETUTIPUS BEALLITAS*/
+@font-face {
+    font-family: SpecialElite;
+    src: url(Federo-Regular.ttf);
+}
+
+* {
+    font-family: SpecialElite;
+}
+
+/*MENU FORMAZAS*/
+/*a menu formazas*/
+.menu {
+    /*a menu szelessege*/
+    width: 100%;
+    /*menu fixalas*/
+    position: fixed;
+    /*Ez azert kell hogy ne ugraljon folyamatosan a bongeszom*/
+    top: 0vh;
+}
+
+/*A MENU LEMEK FORMAZASA*/
+.menu div {
+    float: left;
+    /*a nav cimkek ennyi szazalekot kapnak a kepernyon*/
+    width: 16.6666667%;
+    text-align: center;
+    /*A menu sav*/
+    padding: 1vw 0;
+    font-size: 1em;
+    color: white;
+    background-color: rgb(12, 12, 12);
+}
+
+/*A NAV ELEMEK AZAZ LINKEK FORMAZASA*/
+.cimkek:hover {
+    background-color: rgb(24, 24, 24);
+    /*a hover effekt ennyi ido allatt toltodik be*/
+    transition: .9s ease;
+    color: #64dd17;
+}
+
+.menu .cimkek.active {
+    background-color: rgb(22, 31, 22);
+}
+
+/*EGER KINEZET*/
+.cursor {
+    cursor: pointer;
+}
+
+/*BEMUTATKOZAS FORMAZAS*/
+.bemutatkozas {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(255, 255, 255, 0.030);
+    font-size: 1em;
+    text-align: justify;
+    color: white;
+    padding: 2vw;
+    line-height: 150%;
+    cursor: default;
+
+}
+
+/*AZ UDVOZLETEM...SZOVEG*/
+#bemutatkozascim {
+    color: #879586;
+    font-size: 1.5em;
+}
+
+/*A BEMUTATKOZAS HOVER EFFEKT*/
+.bemutatkozas:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*HAMBURGERMENU*/
+.hamburgermenu {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.030);
+    position: relative;
+}
+
+/*BEZARVA JELENITI MEG A HAMBIMENUT*/
+.hamburgermenu #hambielemek {
+    display: none;
+}
+
+/*A HAMBIBA LEVO LINKEK FORMAZASA*/
+.hamburgermenu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*A HAMBIBA LEVO IKON FORMAZASA*/
+.hamburgermenu a.ikon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*HAMBI HOVER*/
+div .hambicimke:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+/*A HAMBURGER LENYILO LISTABAN A MENUPONTOK */
+.hambicimke {
+    font-size: 1em;
+    padding: 3vw;
+}
+
+/*A KARTYAK SZINE*/
+.kartya {
+    background-color: rgba(255, 255, 255, 0.030);
+}
+
+/*A TECHNIKAK KARTYAINAK HOVER EFFEKTJE*/
+.kartya:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A TECHNIKAK KARTYANAK A TETEJE*/
+.cim {
+    color: #879586;
+    text-align: center;
+    padding: 1vw;
+    font-size: 2em;
+    cursor: default;
+}
+
+/*A TECHNIKAK KARTYAINAK LEIRASANAK FORMAZASA*/
+.leiras {
+    color: white;
+    /*Azert -1 hogy a leiras osszeerjen a keppel.*/
+    margin-top: -1%;
+    text-align: justify;
+    /*a szoved es a hatter szele kozti tavolsag*/
+    padding: 1vw;
+    /*a curzor mintaja*/
+    cursor: default;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+/*LINK FORMAZAS*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #64dd17;
+}
+
+/*lablec*/
+.footer {
+    background-color: rgba(255, 255, 255, 0.030);
+    margin-top: 15vh;
+    padding: 1vw;
+    line-height: 1.5vw;
+}
+
+/*FOOTER HOVER*/
+.footer:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A FOOTERBEN TALALHATO ELERHETOSEG CIM FORMZASA*/
+.footerelerhetosegcim {
+    color: #879586;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+/*A FOOTERBEN TALALHATO ELERHETOSEG ELEMEK FORMZASA*/
+.footerelerhetoseg {
+    display: inline-block;
+    margin-left: 5vw;
+    line-height: 2em;
+}
+
+/*A FOOTERBEN TALALHATO IMPRESSZUM ELEMEK FORMZASA*/
+.impresszum {
+    line-height: 1.5em;
+    display: inline-block;
+    margin-left: 5vw;
+    line-height: 2em;
+}
+
+/*A FOOTERBEN TALALHATO IMPRESSZUM CIM FORMZASA*/
+.impresszumcim {
+    color: #879586;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+
+/*576 ALATT*/
+@media(max-width: 576px) {
+
+    /*ELTUNIK A MENU*/
+    .menu {
+        display: none;
+    }
+
+    /*BEMUTATKOZAS DIV FORMAZAS*/
+    .bemutatkozas {
+        margin-top: 5vh;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    /*A FOOTERBEN LEVO ELEMEK*/
+    .footersorkoz {
+        line-height: 2vh;
+    }
+
+    /*A TECHNIKAK KEP CIM LEIRAST KORULVEVO DIV*/
+    .kartya {
+        width: 90vw;
+    }
+
+    .kartya-tarto {
+        margin-left: 5vw;
+        margin-right: 3vw;
+    }
+
+    /*AZ ELERHETOSEGEKNEK ES IMPRESSZUMNAK A BETUMERET*/
+    .impresszum,
+    .footerelerhetoseg {
+        font-size: 0.9em;
+    }
+}
+
+/*576 ES 768 KOZOTT*/
+@media(min-width: 576px) and (max-width: 768px) {
+
+    /*ELTUNIK A MENU*/
+    .menu {
+        display: none;
+    }
+
+    /*BEMUTATKOZAS DIV FORMAZAS*/
+    .bemutatkozas {
+        margin-top: 5vh;
+        margin-right: 3vw;
+        margin-left: 3vw;
+    }
+
+    /*A TECHNIKAK KEP CIM LEIRAST KORULVEVO DIV*/
+    .kartya {
+        width: 70vw;
+        margin-top: 3vh;
+        margin-right: 15vw;
+        margin-left: 15vw;
+    }
+}
+
+/*768 ES 1200 KOZOTT*/
+@media(min-width: 768px) and (max-width: 1200px) {
+
+    /*ELTUNIK A HAMBI MENU*/
+    .hamburgermenu {
+        display: none;
+    }
+
+    /*BEMUTATKOZAS DIV FORMAZAS*/
+    .bemutatkozas {
+        margin-top: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .kartya-tarto {
+        flex-wrap: wrap;
+        /*egymas mellet */
+        display: flex;
+        margin-left: 3vw;
+    }
+
+    /*A TECHNIKAK KEP CIM LEIRAST KORULVEVO DIV*/
+    .kartya {
+        width: 40vw;
+        margin-top: 5vh;
+        float: left;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    /*A TECHNIKAK KARTYA CIME*/
+    .cim {
+        font-size: 1.5em;
+    }
+
+    /*A TECHNIKAK KARTYA LEIRAS*/
+    .leiras {
+        text-align: center;
+    }
+}
+
+/*1200 ES 1400 KOZOTT*/
+@media(min-width: 1200px) and (max-width: 1400px) {
+
+    /* eltunik a hamburger menu */
+    .hamburgermenu {
+        display: none;
+    }
+
+    /*A KARTYA ELEMEI EGYMAS MELLET */
+    .kartya-tarto {
+        display: flex;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    /*BEMUTATKOZAS DIV FORMAZAS*/
+    .bemutatkozas {
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-bottom: 5vh;
+        margin-top: 20vh;
+    }
+
+    /*A TECHNIKAK KEP CIM LEIRAST KORULVEVO DIV*/
+    .kartya {
+        width: 20vw;
+        margin-top: 5vh;
+        float: left;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .cim {
+        font-size: 1.5em;
+    }
+
+    .leiras {
+        text-align: center;
+    }
+}
+
+/*1400 FOLOTT*/
+@media(min-width: 1400px) {
+
+    /* eltunik a hamburger menu */
+    .hamburgermenu {
+        display: none;
+    }
+
+    .kartya {
+        width: 20vw;
+        float: left;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    .kartya-tarto {
+        display: flex;
+    }
+
+    .bemutatkozas {
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-bottom: 5vh;
+        margin-top: 20vh;
+    }
+}

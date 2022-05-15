@@ -1,0 +1,104 @@
+body {
+    color: white;
+}
+
+/*AZ ASZF DIV ELEEMENEK MODOSITASA */
+#szerzodesFeltetel {
+    background-color: rgba(255, 255, 255, 0.030);
+    font-size: 1.2em;
+    line-height: 1.5vw;
+    cursor: default;
+}
+
+/*AZ ASZF DIV ELEEMENEK HOVERJE */
+#szerzodesFeltetel:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A ASZF CIM FORAMAZASA*/
+.AszfCim {
+    color: #879586;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*A FONTOS MENUPONTOK FORMAZASA*/
+.felkover {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 4vw;
+    color: #879586;
+}
+
+/*567px ALATT*/
+@media(max-width: 567px) {
+
+    /*A ASZF CIM FORAMAZASA*/
+    .AszfCim {
+        font-size: 1.6em;
+    }
+
+    /*AZ ASZF DIV ELEEMENEK MODOSITASA */
+    #szerzodesFeltetel {
+        margin-top: 5vw;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        padding: 3vw;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    /*A FONTOS MENUPONTOK FORMAZASA*/
+    .felkover {
+        line-height: 3em;
+    }
+}
+
+/*1400 FOLOTT*/
+@media(min-width: 1400px) {
+
+    /*AZ ASZF DIV ELEEMENEK MODOSITASA */
+    #szerzodesFeltetel {
+        margin-top: 5vw;
+        margin-right: 20vw;
+        margin-left: 20vw;
+        padding: 2vw;
+    }
+}
+
+/*1400 px ALATT 567 px FOLOTT*/
+@media (min-width: 567px) and (max-width:1400px) {
+
+    /*A ASZF CIM FORAMAZASA*/
+    .AszfCim {
+        font-size: 1.6em;
+    }
+
+    /*AZ ASZF DIV ELEMENEK MODOSITASA */
+    #szerzodesFeltetel {
+        margin-top: 5vw;
+        margin-right: 20vw;
+        margin-left: 20vw;
+        padding: 3vw;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    /*A FONTOS MENUPONTOK FORMAZASA*/
+    .felkover {
+        line-height: 3em;
+    }
+}
+
+/*1400 OLOTT*/
+@media(min-width: 1400px) {
+
+    /*AZ ASZF DIV ELEMENEK MODOSITASA */
+    #szerzodesFeltetel {
+        margin-top: 5vw;
+        margin-right: 20vw;
+        margin-left: 20vw;
+        padding: 2vw;
+    }
+}

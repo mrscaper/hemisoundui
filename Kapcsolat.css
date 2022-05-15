@@ -1,0 +1,169 @@
+/*A NAGY DIV AZ ELERHETOSEG ES A TERKEP HATTERE*/
+.hatterdiv {
+    /*a nagy div elem, es amiben benne van minden mas*/
+    background-color: rgba(255, 255, 255, 0.030);
+    margin-top: 20vh;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    overflow: auto;
+    padding: 2vw;
+}
+
+/*A NAGY DIV AZ ELERHETOSEG ES A TERKEP HATTERENEK A HOVERE*/
+.hatterdiv:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*AZ ELERHETOSEGNEK A FORMAZASA*/
+.elerhetoseg {
+    /*a div elem es a weboldal kozti tavolsag*/
+    margin-left: 2vw;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+#elerhetosegcim {
+    font-size: 2.5em;
+    cursor: default;
+    color: #879586;
+}
+
+/*LINK FORMAZAS*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*LINK HOVER FORMAZAS*/
+a:hover {
+    color: #64dd17;
+    text-shadow: 0.5vw 0.5vw 0.5vw black;
+    transition: .2s ease;
+}
+
+/*TERKEP SZELESSEGE*/
+.terkep {
+    width: 92%;
+}
+
+/*TERKEP HOVER FORMAZAS*/
+.terkep:hover {
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.644), 0 20px 20px rgba(0, 0, 0, 0.644);
+    transition: .9s ease;
+}
+
+/*1400 FOLOTT*/
+@media(min-width:1400px) {
+    #hatterdiv {
+        margin-top: 5vh;
+        padding: 2vw;
+    }
+
+    /*A TERKEP DIV ELEMENEK AZ IGAZITASA*/
+    #jobboldal {
+        width: 50%;
+        float: right;
+    }
+
+    #baloldal {
+        width: 50%;
+        float: left;
+    }
+
+}
+
+/*1400  ES 1200 KOZOTT*/
+@media (min-width: 1200px) and (max-width:1400px) {
+
+    /*A NAGY DIV AZ ELERHETOSEG ES A TERKEP HATTERE*/
+    .hatterdiv {
+        /*a nagy div elem, es amiben benne van minden mas*/
+        margin-top: 20vh;
+        margin-right: 15vw;
+        margin-left: 15vw;
+        padding: 4vw;
+    }
+
+    #elerhetosegcim {
+        font-size: 2em;
+    }
+
+    /*A TERKEP DIV ELEMENEK AZ IGAZITASA*/
+    #jobboldal {
+        width: 50%;
+        float: right;
+    }
+
+    #baloldal {
+        width: 50%;
+        float: left;
+    }
+
+    .terkep {
+        width: 92%;
+    }
+}
+
+/*1200 ES 768 KOZOTT*/
+@media(min-width:768px)and (max-width:1200px) {
+
+    /*A NAGY DIV AZ ELERHETOSEG ES A TERKEP HATTERE*/
+    .hatterdiv {
+        /*a nagy div elem, es amiben benne van minden mas*/
+        margin-top: 20vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        padding: 5vw;
+    }
+
+    #elerhetosegcim {
+        font-size: 1.5em;
+    }
+
+    /*A TERKEP DIV ELEMENEK AZ IGAZITASA*/
+    #jobboldal {
+        width: 50%;
+        float: right;
+    }
+
+    #baloldal {
+        width: 50%;
+        float: left;
+    }
+
+    .terkep {
+        width: 92%;
+    }
+}
+
+/*768 ALATT*/
+@media(max-width:768px) {
+
+    /*A NAGY DIV AZ ELERHETOSEG ES A TERKEP HATTERE*/
+    .hatterdiv {
+        /*a nagy div elem, es amiben benne van minden mas*/
+        margin-top: 5vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        padding: 8vw;
+    }
+
+    #elerhetosegcim {
+        font-size: 1.5em;
+    }
+
+    .elerhetoseg {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #jobboldal {
+        margin-top: 7vh;
+
+    }
+
+    .terkep {
+        width: 100%;
+    }
+}

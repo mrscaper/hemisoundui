@@ -1,0 +1,401 @@
+/*AZ INPUT ELEMEK ES AZ ELERHETOSEG NAGY HATTERE*/
+.divekhattere {
+    margin: 6vw;
+    background-color: rgba(255, 255, 255, 0.030);
+    padding: 2vw;
+    min-height: 80vh;
+}
+
+/*AZ INPUT ELEMEK ES AZ ELERHETOSEG NAGY HATTERENEK A HOVERE*/
+.divekhattere:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .9s ease;
+}
+
+/*A FIGYELMEZTETO SZOVEG, A LEGELSO MONDAT*/
+#figyelmeztetes {
+    font-size: 2em;
+    color: #879586;
+    text-align: center;
+}
+
+/*AZ ELERHETOSEG FORMAZASA*/
+.elerhetoseg {
+    font-size: 1.5em;
+    /*a div elem es a weboldal kozti tavolsag*/
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+/*AZ ELERHETOSEG CIME*/
+#Elerhetosegcim {
+    font-size: 2em;
+    color: #879586;
+    cursor: default;
+}
+
+/*A LINKEK FORMAZASA*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*A LINKEK HOVER FORMAZASA*/
+a:hover {
+    color: #64dd17;
+    text-shadow: 0.5vw 0.5vw 0.5vw black;
+    transition: .2s ease;
+}
+
+/*INPUT ELEMEKET KORUL OLELO DIV*/
+.urlapelemek {
+    margin-top: 5vh;
+}
+
+/*A KERJEN AJANLATOT SZOVEG FORMAZASA*/
+#Ajanlatcim {
+    font-size: 2.5em;
+    color: #879586;
+    cursor: default;
+}
+
+/*INPUT ELEMEK FORMAZASA*/
+input {
+    border-radius: 0.2vw;
+    border: solid 2px black;
+    border-style: solid;
+    font-size: 2.5em;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.568);
+}
+
+/*SELECT ELEM FORMAZASA*/
+select {
+    border: solid 2px black;
+    border-radius: 0.2vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.568);
+}
+
+select option {
+    background-color: #1b1919;
+}
+
+/*TEXTAREA FORMAZASA*/
+textarea {
+    border-radius: 0.2vw;
+    margin-top: 1vw;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: solid 2px black;
+    font-size: 1.5em;
+    color: white;
+}
+
+/*LABEL FORMAZAS*/
+label {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.568);
+}
+
+/*AZ URLAP ELEMEK ES AZ ELERHETOSEG*/
+.sorkoz {
+    /*az elemek kozti tavolsag*/
+    margin-top: 2vh;
+    /*az elerhetosegek sorok kozti behuzasa*/
+    line-height: 300%;
+}
+
+/*LABELEKNEL HASZNALOM*/
+.sorkozlabel {
+    line-height: 250%;
+}
+
+/*A GOMB FORMAZAS*/
+#gomb {
+    width: 100%;
+    background-color: #879586;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*A KOTELEZO KITOLTENI MEZOK ELVALASZTOJA*/
+hr {
+    text-align: left;
+    margin: 0;
+}
+
+/*ERVENYTELEN INPUTNAL*/
+.ervenytelen-input {
+    border: 2px solid red;
+}
+
+/*ERVENYTELEN INPUTNAL*/
+/*FOCUS:AMI KERET ELEVE RAJTA VAN, AZT ATSZINEZZUK*/
+.ervenytelen-input:focus-visible {
+    outline-color: red;
+    margin-top: 2vh;
+}
+
+/*ERVENYES INPUTNAL*/
+.ervenyes-input {
+    border: 2px solid green;
+}
+
+/*ERVENYES INPUTNAL*/
+.ervenyes-input:focus-visible {
+    outline-color: green;
+}
+
+/*INPUT MEZOK SZELESSEGE, MAGASSAGA*/
+.ajanlatkeres-input {
+    width: 98%;
+    height: 2em;
+}
+
+/*A SELECT MEZO SZELESSEGE, MAGASSAGA*/
+.ajanlatkeres-select {
+    width: 100%;
+    height: 2.4em;
+}
+
+/*INPUT DATUM MEZOK SZELESSEGE, MAGASSAGA*/
+.ajanlatkeres-input-date {
+    width: 99%;
+    height: 2em;
+}
+
+/*A TEXTAREA MERETE*/
+#uzenet {
+    width: 98%;
+}
+/*Sikeres es sikertelen kuldes eseten*/
+.visszajelzes{
+    text-align: center;
+    font-size: 2em;
+}
+
+/*1400PX FOLOTT*/
+@media(min-width:1400px) {
+    .elerhetoseg {
+        float: right;
+        /*a div elem szelessege*/
+        width: 20vw;
+        /*a div elem magassaga*/
+        height: 70vh;
+    }
+
+    /*INPUT MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input {
+        width: 99.1%;
+        height: 2em;
+    }
+
+    /*A KOTELEZO KITOLTENI MEZOK ELVALASZTOJA*/
+    hr {
+        width: 99%;
+        margin: 0;
+    }
+
+    /*A SELECT MEZO SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-select {
+        width: 100%;
+        height: 2.5em;
+        font-size: 1.1em;
+    }
+
+    /*INPUT DATUM MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input-date {
+        width: 99.5%;
+        height: 2.5em;
+    }
+
+    /*A TEXTAREA MERETE*/
+    #uzenet {
+        width: 99%;
+        font-size: 1.3em;
+    }
+
+    /*A GOMB MERETE*/
+    #gomb {
+        width: 100%;
+    }
+}
+
+/*576px FOLOTT*/
+@media(min-width:576px) {
+    .urlapelemek {
+        width: 50%;
+    }
+
+}
+
+/*1400PX ES 576 PX KOZOTT*/
+@media (max-width:1400px) and (min-width: 576px) {
+
+    /*AZ INPUT MEZOK BETUMERETE*/
+    input {
+        font-size: 1em;
+    }
+
+    /*INPUT MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input {
+        width: 98%;
+        height: 2em;
+    }
+
+    /*A SELECT MEZO SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-select {
+        width: 100%;
+        height: 2.1em;
+        font-size: 1.1em;
+    }
+
+    /*INPUT DATUM MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input-date {
+        width: 99%;
+        height: 2.8em;
+    }
+
+    /*A TEXTAREA MERETE*/
+    #uzenet {
+        width: 98%;
+        height: 20vh;
+        font-size: 1.3em;
+    }
+
+    /*A GOMB MERETE*/
+    #gomb {
+        width: 100%;
+        padding-top: 2vh;
+    }
+
+    /*A KERJEN AJANLATOT SZOVEG BETU FORMAZASA*/
+    #Ajanlatcim {
+        font-size: 1.8em;
+    }
+
+    /*A KOTELEZO KITOLTENI MEZOK ELVALASZTOJA*/
+    hr {
+        width: 99%;
+        margin: 0;
+    }
+
+    /*A CIMKEK BETUMERETE*/
+    label {
+        font-size: 1em;
+    }
+
+    /*AZ INPUT ELEMEK ES AZ ELERHETOSEG NAGY HATTERE*/
+    .divekhattere {
+        /*A hatterdiv tavolsaga a weboldaltol*/
+        margin-top: 10vh;
+        padding: 1vw;
+        /*A hatterdiv tavolsaga a weboldaltol*/
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    #Elerhetosegcim {
+        font-size: 1.8em;
+    }
+
+    /*AZ ELERHETOSEG FORMAZASA*/
+    .elerhetoseg {
+        margin-top: 5vh;
+        font-size: 1em;
+        line-height: 2em;
+        float: right;
+        /*a dive elem szelessege*/
+        width: 20vw;
+        /*a div elem magassaga*/
+        height: 70vh;
+    }
+}
+
+/*567px ALATT*/
+@media(max-width:576px) {
+
+    /*AZ INPUT ELEMEK ES AZ ELERHETOSEG NAGY HATTERE*/
+    .divekhattere {
+        /*A hatterdiv tavolsaga a weboldaltol*/
+        margin-right: 5vw;
+        margin-left: 5vw;
+        /*Az input elemek tavolsaga a hatter szeletol*/
+        padding-left: 4vw;
+    }
+
+    /*AZ INPUT ELEMEK BETUMERETE*/
+    input {
+        font-size: 1em;
+    }
+
+    /*INPUT MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input {
+        /*az input szelessege*/
+        width: 98%;
+        /*az input magassaga*/
+        height: 2em;
+    }
+
+    /*A SELECT MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-select {
+        width: 100%;
+        height: 2.1em;
+        font-size: 1.1em;
+    }
+
+    /*INPUT DATUM MEZOK SZELESSEGE, MAGASSAGA*/
+    .ajanlatkeres-input-date {
+        width: 99%;
+        height: 2.8em;
+    }
+
+    /*A TEXTAREA MERETE*/
+    #uzenet {
+        width: 98%;
+        height: 20vh;
+    }
+
+    /*A KERJEN AJANLATOT SZOVEG BETU FORMAZASA*/
+    #Ajanlatcim {
+        font-size: 1.5em;
+    }
+
+    /*A GOMB MERETE*/
+    #gomb {
+        width: 100%;
+        padding-top: 2vh;
+    }
+
+    /*AZ ELVALASZTO MERETE*/
+    hr {
+        width: 99%;
+        margin: 0;
+    }
+
+    /*A CIMKEK MERETE,SZINE*/
+    label {
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.568);
+    }
+
+    /*A TEXTAREA MERETE*/
+    #uzenet {
+        font-size: 1.3em;
+    }
+
+    #Elerhetosegcim {
+        font-size: 1.5em;
+    }
+
+    /*AZ ELERHETOSEGEK FORMAZASA*/
+    .elerhetoseg {
+        margin-top: 5vh;
+        font-size: 1em;
+        line-height: 2em;
+    }
+}
